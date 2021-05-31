@@ -1,0 +1,80 @@
+.sidenav {
+  padding: 10px;
+  height: 100%;
+  width: 295px;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #6C8796;
+  margin: 0;
+  padding: 0;
+  width: 190px;
+  padding-left: 45px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.sidebar-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #12394F;
+  margin: 0;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+mat-nav-list a {
+text-decoration: none;
+font-weight: 400;
+color: #3E484F;
+padding-top: 5px;
+padding-bottom: 5px;
+font-size: 14px;
+
+}
+
+mat-nav-list {
+padding-left: 20px;
+width: 220px;
+}
+
+#bot-logout{
+  position: absolute;
+  bottom: 30px;
+  font-weight: 450;
+  font-size: 14px;
+  background-color: white;
+  color: red;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 55px;
+}
+
+mat-nav-list button {
+  width: 100px;
+  i {
+      padding-bottom: 5px;
+      padding-right: 5px;
+      font-size: 18px;
+      color: red;
+  }
+}

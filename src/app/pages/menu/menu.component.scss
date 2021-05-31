@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+
+.fill-space {
+    /* This fills the remaining space, by using flexbox.
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+  .menu {
+     color: white;
+     background-color: #12394F;
+     padding-right: 20px;
+     padding-left: 20px;
+  }
+
+  #title {
+     font-family: Arvo, serif;
+     padding-right: 20px;
+  }
