@@ -12,7 +12,8 @@ import { UsuariosComponent } from './pages/usuarios/usuarios.component';
 import { DenunciasComponent } from './pages/denuncias/denuncias.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './pages/shared/shared.module';
-
+import { HttpClientModule } from '@angular/common/http'
+import { ApiService } from './service/api.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,8 +30,9 @@ import { SharedModule } from './pages/shared/shared.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

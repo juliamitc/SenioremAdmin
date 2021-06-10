@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from './../../service/api.service';
 
 @Component({
   selector: 'app-usuarios',
@@ -6,9 +7,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./usuarios.component.scss']
 })
 
-export class UsuariosComponent {
-  displayedColumns: string[] = ['email', 'num_denuncia', 'ativo'];
-  dataSource = ELEMENT_DATA;
+export class UsuariosComponent implements
+  OnInit{
+  Usuario:any = [];
+
+  constructor(private apiService: ApiService)
+  {
+    this.readUsuario();
+  }
+
+  ngOnInit() {}
+
+  readUsuario(){
+    this.apiService.getUsuarios().subscribe((data => {
+      this.Usuario = data;
+    }))
+  }
+
+  addBlacklist(usuario, index) {
+    if(window.confirm('Deseja bloquear este usuário?')) {
+      this.apiService.addBlacklist(usuario._id).subscribe((data) => {
+        this.Usuario.splice(index, 1);
+      })
+    }
+  }
+
 }
 
 
